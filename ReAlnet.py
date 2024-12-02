@@ -324,7 +324,7 @@ def train_and_test(encoder, cornet, weightspath, task_criterion, mse_criterion, 
             # forward
             outputs, pred = encoder(imgs)
             cornet_outputs = cornet(imgs)
-            loss1 = mse_criterion(outputs, cornet_outputs)
+            loss1 = task_criterion(outputs, cornet_outputs)
             loss2 = gen_criterion(pred, eeg, mse_criterion)
             loss = beta*loss2 + loss1
         
@@ -367,7 +367,7 @@ def train_and_test(encoder, cornet, weightspath, task_criterion, mse_criterion, 
             # forward
             outputs, pred = encoder(imgs)
             cornet_outputs = cornet(imgs)
-            loss1 = mse_criterion(outputs, cornet_outputs)
+            loss1 = task_criterion(outputs, cornet_outputs)
             loss2 = gen_criterion(pred, eeg, mse_criterion)
             loss = beta*loss2 + loss1
             
