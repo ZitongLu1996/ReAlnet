@@ -1,4 +1,4 @@
-# ReAlnet - A Convolutional Neural Network with Human EEG/fMRI Representational Alignment
+# ReAlnet - Human EEG/fMRI-aligned Artifical Neural Network
 Achieving more human brain-like vision via human EEG representational alignment
 
 ReAl = Representational Alignment
